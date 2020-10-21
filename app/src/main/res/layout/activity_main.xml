@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/editbox_dropdown_light_frame"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginRight="@dimen/right"
+        android:hint="@string/nombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieditNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/lldatePicker"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tfNombre"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/setDate"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/lineborder"
+                android:text="@string/setDate"
+                android:textSize="@dimen/textSize"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/fNacimiento"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/lineborder"
+                android:text="@string/fechaNac"
+                android:textSize="@dimen/textSize"
+                android:gravity="center_vertical|right"/>
+
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleDatePicker"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:headerDayOfMonthTextAppearance="@string/email"
+            android:textSize="@dimen/textSize" />
+
+        <LinearLayout
+            android:id="@+id/tr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onclicCancel"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textSize"
+                android:theme="@style/miBotonRaised" />
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onclicOk"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textSize"
+                android:theme="@style/miBotonRaised" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lldatePicker"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginRight="@dimen/right"
+        android:hint="@string/telefono">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieditTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfTelefono"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginRight="@dimen/right"
+        android:hint="@string/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieditEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfDescContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfEmail"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginRight="@dimen/right"
+        android:hint="@string/descContacto">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieditDescContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sig_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfDescContacto"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginBottom="@dimen/bottom"
+        android:onClick="onclickSiguiente"
+        android:text="@string/siguiente"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize"
+        android:theme="@style/miBotonRaised" />
+
+</RelativeLayout>

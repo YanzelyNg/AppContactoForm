@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmaDatos"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvConfDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:text="@string/confirmaDatos"
+        android:textSize="@dimen/textTitleSize"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topTitle"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_below="@id/tvConfDatos"
+        android:textSize="@dimen/textSize"
+        android:text="@string/nombre"/>
+
+    <LinearLayout
+        android:id="@+id/llFNac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topTitle"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvConfDatos">
+
+        <TextView
+            android:id="@+id/tvfNacimLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/fechaNac1"/>
+
+        <TextView
+            android:id="@+id/tvfNacimInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/vacio"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topTitle"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:orientation="horizontal"
+        android:layout_below="@id/llFNac">
+
+        <TextView
+            android:id="@+id/tvTelefLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/telefono1"/>
+
+        <TextView
+            android:id="@+id/tvTelefInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/vacio"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topTitle"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:orientation="horizontal"
+        android:layout_below="@id/llTel">
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/email1"/>
+
+        <TextView
+            android:id="@+id/tvEmailInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/vacio"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topTitle"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:orientation="horizontal"
+        android:layout_below="@id/llEmail">
+
+        <TextView
+            android:id="@+id/tvDescripLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/descContacto1"/>
+
+        <TextView
+            android:id="@+id/tvDescripInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="@string/vacio"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/botonEditDatosSpace"
+        android:onClick="onclicEditDatos"
+        android:text="@string/editDatos"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize"
+        android:theme="@style/miBotonRaised" />
+
+</LinearLayout>

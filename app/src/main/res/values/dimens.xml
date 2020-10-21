@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top">10dp</dimen>
+    <dimen name="topland">8dp</dimen>
+    <dimen name="topTitle">20dp</dimen>
+    <dimen name="left">10dp</dimen>
+    <dimen name="right">10dp</dimen>
+    <dimen name="bottom">10dp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="textTitleSize">24sp</dimen>
+    <dimen name="botonEditDatosSpace">40sp</dimen>
+</resources>

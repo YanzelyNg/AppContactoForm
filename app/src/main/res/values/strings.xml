@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AppContactoForm</string>
+    <string name="nombre">Nombre Completo</string>
+    <string name="telefono">Teléfono</string>
+    <string name="telefono1">Teléfono: </string>
+    <string name="email">Email</string>
+    <string name="email1">Email: </string>
+    <string name="descContacto">Descripción Contacto</string>
+    <string name="descContacto1">Descripción: </string>
+    <string name="setDate">Set Date</string>
+    <string name="fechaNac">Fecha Nacimiento</string>
+    <string name="fechaNac1">Fecha Nacimiento: </string>
+    <string name="vacio"> xxx </string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="confirmaDatos">Confirmar Datos</string>
+    <string name="editDatos">Editar Datos</string>
+    <string name="intentNombre">Nombre</string>
+    <string name="intentFechNac">Nacimiento</string>
+    <string name="intentTelefon">Telefono</string>
+    <string name="intentEmail">Email</string>
+    <string name="intentDescrip">Descrip</string>
+    <string name="fechaSel">Fecha Seleccionada: </string>
+    <string name="fechaHoy">Se canceló selección, se coloca fecha de hoy</string>
+</resources>
